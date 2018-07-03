@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>我的乐园</title>
+
+</head>
+<style type="text/css">
+    #image_logo {
+        margin-top: 5%;
+        margin-left:35%;
+        position:center;
+    }
+#login_frame {
+width: 400px;
+height: 400px;
+padding: 13px;
+
+position: absolute;
+left: 45%;
+top: 65%;
+margin-left: -200px;
+margin-top: -200px;
+
+background-color: whitesmoke;
+
+border-radius: 10px;
+text-align: center;
+}
+</style>
+<body>
+<p id="image_logo"><img src="/Path/resources/images/logoko.png" onclick="window.location.href='newhome'"></p>
+<div id="login_frame">
+    <h3 th:text="'我的账号：'+ ${id}"></h3>
+    <h3 th:text="'我的昵称：'+ ${nickname}"></h3>
+    <h3 th:text="'我的性别：'+${sex}"></h3>
+    <h3 th:text="'我的性取向：'+${sex1}"></h3>
+</div>
+</body>
+</html>

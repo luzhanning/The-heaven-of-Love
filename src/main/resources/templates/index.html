@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+
+
+</head>
+<style type="text/css">
+    body {
+        background-color: rgba(240, 255, 255, 0.5);
+    }
+
+    #login_frame {
+    width: 400px;
+    height: 260px;
+    padding: 13px;
+
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    margin-left: -200px;
+    margin-top: -200px;
+
+    background-color: whitesmoke;
+
+    border-radius: 10px;
+    text-align: center;
+    }
+
+    form p > * {
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+    #image_logo {
+    margin-top: 1px;
+        margin-left:750px;
+        position:center;
+    }
+
+    .label_input {
+    font-size: 14px;
+
+
+    width: 65px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+
+    color: white;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+
+    .text_field {
+    width: 278px;
+    height: 28px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    }
+
+    #btn_login {
+    font-size: 14px;
+
+
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+    border: 0;
+
+    float: left;
+    }
+
+    #forget_pwd {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    top: 5px;
+
+    }
+
+    #forget_pwd:hover {
+    color: blue;
+    text-decoration: underline;
+    }
+
+    #login_control {
+    padding: 0 28px;
+    }
+</style>
+    <body>
+    <p id="image_logo"><img src="/Path/resources/images/logoko.png" onclick="window.location.href='home'"></p>
+<div id="login_frame">
+
+
+
+    <form method="post" action="/login">
+
+        <p><label class="label_input">用户名</label><input type="text" id="username" name = "username" class="text_field"/></p>
+        <p><label class="label_input">密码</label><input type="password" id="password" name = "password" class="text_field"/></p>
+
+        <div id="login_control">
+            <input type="submit" id="btn_login" value="登录" />
+            <a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html> 
