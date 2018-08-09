@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+
+</head>
+
+<style type="text/css">
+    #image_logo {
+        margin-top: 5%;
+        margin-left:35%;
+        position:center;
+    }
+
+    #login_control {
+        padding: 0 820px;
+    }
+</style>
+<body>
+<p id="image_logo"><img src="http://chuantu.biz/t6/347/1532329727x-1404792706.png"></p>
+<div id="login_control">
+    <h3 th:text="${nickname}+'(' +${id}+')'"></h3><a href="/logout">注销</a>   <a href="/leyuan">我的乐园</a>
+</div>
+</body>
+</html>

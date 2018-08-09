@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+
+
+</head>
+<style type="text/css">
+    body {
+        background-color: rgba(240, 255, 255, 0.5);
+    }
+
+    #login_frame {
+        width: 400px;
+        height: 400px;
+        padding: 13px;
+
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        margin-left: -200px;
+        margin-top: -200px;
+
+        background-color: whitesmoke;
+
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    form p > * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #image_logo {
+        margin-top: 1px;
+        margin-left:750px;
+        position:center;
+    }
+
+    .label_input {
+        font-size: 14px;
+
+
+        width: 65px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+
+        color: white;
+        background-color: black;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .text_field {
+        width: 278px;
+        height: 28px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 0;
+    }
+
+    #btn_login {
+        font-size: 14px;
+
+
+        width: 120px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+
+        color: white;
+        background-color: black;
+        border-radius: 6px;
+        border: 0;
+
+        float: left;
+    }
+
+
+
+    #login_control {
+        padding: 0 28px;
+    }
+</style>
+<body>
+<p id="image_logo"><img src="http://chuantu.biz/t6/347/1532329727x-1404792706.png" onclick="window.location.href='home'"></p>
+<div id="login_frame">
+
+
+
+    <form method="post" action="/register">
+
+        <p><label class="label_input">用户名</label><input type="text" id="username" name = "username" class="text_field"/></p>
+        <p><label class="label_input">密码</label><input type="password" id="password" name = "password" class="text_field"/></p>
+        <p><label class="label_input">确认密码</label><input type="password" id="password2" name = "password2" class="text_field"/></p>
+        <p><label class="label_input">昵称</label><input type="text" id="nickname" name = "nickname" class="text_field"/></p>
+        <p><label class="label_input">性别</label><input type="text" id="sex" name = "sex" class="text_field"/></p>
+        <p><label class="label_input">性取向</label><input type="text" id="sex2" name = "sex2" class="text_field"/></p>
+        <div id="login_control">
+            <input type="submit" id="btn_login" value="注册" />
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
